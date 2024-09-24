@@ -98,6 +98,5 @@ def main(file_path):
 
 
 if __name__ == '__main__':
-    # Pfad zur Datei mit den URLs
     file_path = './sources/'
     main(file_path)

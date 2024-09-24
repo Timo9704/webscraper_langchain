@@ -1,3 +1,4 @@
+#This class was generated using GitHub CoPilot
 import requests
 from bs4 import BeautifulSoup
 
@@ -9,11 +10,10 @@ def extract_drta_content(url):
         table = soup.find('table')
         fish_details = {}
 
-        # Extracting data from the rows
         rows = table.find_all('tr')
         for row in rows:
             cells = row.find_all('td')
-            if len(cells) == 2:  # Ensure the row has exactly two cells
+            if len(cells) == 2:
                 key = cells[0].text.strip().replace(":", "")
                 value = cells[1].text.strip()
                 fish_details[key] = value

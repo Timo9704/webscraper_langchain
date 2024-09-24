@@ -1,3 +1,4 @@
+#This class was generated using GitHub CoPilot
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -20,6 +21,3 @@ def extract_tropica_contenturl(url):
             return content
     else:
         print(f"Failed to retrieve {url}")
-
-# Beispielaufruf der Funktion
-extract_tropica_contenturl('https://tropica.com/de/pflanzen/')

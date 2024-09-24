@@ -1,3 +1,4 @@
+#This class was generated using GitHub CoPilot
 import requests
 from bs4 import BeautifulSoup
 
@@ -10,10 +11,8 @@ def extract_garnelenguemmer_content(url):
         div_block = soup.find('div', class_='blog--detail-description block')
         if div_block:
             content = ""
-            # Sammle alle Elemente in div_block
             all_elements = div_block.find_all(recursive=False)
             for element in all_elements:
-                # Prüfe, ob das Element einen Nachkommen mit der Klasse 'box--content is--rounded' hat
                 if element.find(class_='box--content is--rounded'):
                     continue
                 if element.name == 'p':

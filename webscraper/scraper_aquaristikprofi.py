@@ -1,3 +1,4 @@
+#This class was generated using GitHub CoPilot
 import requests
 from bs4 import BeautifulSoup
 
